@@ -33,9 +33,9 @@ class PropelObjectFormatter extends PropelFormatter
             $collection = array();
         }
         if ($this->isWithOneToMany()) {
-            if ($this->hasLimit) {
-                throw new PropelException('Cannot use limit() in conjunction with with() on a one-to-many relationship. Please remove the with() call, or the limit() call.');
-            }
+//            if ($this->hasLimit) {
+//                throw new PropelException('Cannot use limit() in conjunction with with() on a one-to-many relationship. Please remove the with() call, or the limit() call.');
+//            }
             $pks = array();
             $objectsByPks = array();
             while ($row = $stmt->fetch(PDO::FETCH_NUM)) {
